@@ -4,10 +4,10 @@
  */
 function sumOfTwoInTheArray(arr) {
   var len = arr.length;
-  var map = new Set(arr);
+  var set = new Set(arr);
   for (var i=0; i<len; i++) {
     for (var j=i+1; j<len; j++) {
-      if (map.has(arr[i] + arr[j])) {
+      if (set.has(arr[i] + arr[j])) {
         return true;
       }
     }
