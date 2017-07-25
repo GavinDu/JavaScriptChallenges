@@ -12,8 +12,6 @@ function longestSubstring(string) {
     if (chr != string[i]) {
       if (curLength > longestLength) {
         longestLength = curLength;
-        console.log(i);
-        console.log(curLength);
         curPos = i - curLength;
       }
       chr = string[i];
@@ -29,3 +27,4 @@ function longestSubstring(string) {
   }
   return [curPos, longestLength];
 }
+
